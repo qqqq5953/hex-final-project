@@ -1,0 +1,438 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    font-size     : 100%;
+    font          : inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing : 0;
+}
+
+/* --------------------------------------------- */
+.wrap {
+    /* outline: 1px solid orange; */
+    margin        : 0px auto;
+    letter-spacing: 0.5px;
+    font-family   : "noto sans tc", "noto serif tc";
+    color         : #333333;
+    font-size     : 18px;
+}
+
+header {
+    /* outline: 1px solid black; */
+    margin-bottom: 30px;
+}
+
+.social-media {
+    display         : flex;
+    justify-content : flex-end;
+    background-color: #f6f6f6;
+    padding         : 10px 0;
+}
+
+.fb,
+.tw {
+    /* outline: 1px solid blue; */
+    display: flex;
+}
+
+.fb {
+    border-right: 1px solid #d4d4d4;
+    padding     : 3px 10px 3px 0px;
+}
+
+.tw {
+    padding: 3px 18px 3px 10px;
+}
+
+.fb a {
+    margin-left    : 5px;
+    color          : #4863a1;
+    text-decoration: none;
+}
+
+.tw a {
+    margin-left    : 4px;
+    color          : #08b0d1;
+    text-decoration: none;
+}
+
+nav {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    margin         : 3px 0;
+}
+
+nav h1 a {
+    /* outline: 1px solid black; */
+    background-image: url(/images/logo.png);
+    width           : 224px;
+    height          : 50px;
+    display         : block;
+    text-indent     : 101%;
+    white-space     : nowrap;
+    overflow        : hidden;
+}
+
+.navigation {
+    /* outline: 1px solid black; */
+    display: flex;
+}
+
+.navigation li {
+    /* outline: 1px solid black; */
+    margin    : 0 10px;
+    text-align: center;
+}
+
+.navigation li a {
+    text-decoration: none;
+    display        : block;
+    color          : #00d19b;
+    padding        : 21px 8px;
+    border         : 2px solid white;
+}
+
+.navigation li a:hover {
+    border-bottom-color: #00d19b;
+}
+
+.banner-img {
+    /* outline: 1px solid blue; */
+    background      : url(images/banner.png) no-repeat 100%;
+    background-color: #222222;
+    max-width       : 100%;
+    width           : 100%;
+    height          : 346px;
+    margin          : 0 auto 50px;
+    display         : flex;
+    align-items     : center;
+    /* position     : relative; */
+    /* margin       : 0 auto;
+    text-align      : center; */
+}
+
+
+.banner-words {
+    /* outline: 1px solid blue; */
+    font-size  : 45px;
+    color      : white;
+    line-height: 1.4;
+    width      : 100%;
+    padding    : 20px 0 20px 20px;
+    /* height  : auto; */
+    background : rgba(255, 255, 255, 0.04);
+}
+
+
+/* course -------------------------*/
+.course .course-ul {
+    /* outline: 1px solid blue; */
+    display        : flex;
+    justify-content: space-around;
+    margin-bottom  : 50px;
+}
+
+h3 {
+    margin     : 8px 0;
+    text-align : center;
+    font-weight: 400;
+    font-size  : 23px;
+}
+
+.course-item {
+    /* outline: 1px solid tomato; */
+    width     : 28%;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
+    padding   : 18px;
+}
+
+.course-item a {
+    text-decoration: none;
+}
+
+
+.course-img {
+    /* outline: 1px solid tomato; */
+    text-align: center;
+}
+
+.description {
+    line-height : 1.4;
+    text-align  : justify;
+    text-justify: inter-ideograph;
+    font-weight : 300;
+    color       : #333333;
+}
+
+.content li {
+    /* outline: 1px solid tomato; */
+    list-style : square;
+    margin-left: 22px;
+}
+
+
+/* difference -------------------------*/
+.difference h2 {
+    /* outline: 1px solid tomato; */
+    margin     : 0 auto 20px;
+    text-align : center;
+    font-size  : 26px;
+    font-weight: 400;
+}
+
+table {
+    /* outline: 1px solid tomato; */
+    margin: 0 auto 50px;
+}
+
+th,
+td {
+    /* outline: 1px solid tomato; */
+    padding      : 15px 70px 15px 35px;
+    border-top   : 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+th {
+    background-color: #f7f7f7;
+    text-align      : left;
+    font-weight     : 400;
+}
+
+td {
+    font-weight: 300;
+}
+
+.green {
+    color: #55b193;
+}
+
+/* message -------------------------*/
+.message {
+    background: -webkit-linear-gradient(#00674c, #019872);
+    color     : white;
+    margin    : 0px auto;
+    padding   : 30px 0;
+}
+
+/* 用background-image做時 */
+/* .mbi {
+    background-image: url(images/mbi.png);
+    background-repeat: repeat-x;
+    width: auto;
+    height: 524px;
+} */
+
+.message h2 {
+    /* outline    : 1px solid tomato; */
+    text-align : center;
+    line-height: 1.4;
+    font-size  : 26px;
+    font-weight: 400;
+}
+
+form {
+    display        : flex;
+    justify-content: space-evenly;
+    margin         : 30px 10px;
+}
+
+textarea {
+    border-radius: 3px;
+    border-color : transparent;
+    font-size    : 18px;
+    width        : 45%;
+    height       : auto;
+}
+
+.info {
+    /* outline: 1px solid black; */
+    width: 45%;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    display      : block;
+    margin       : 8px 0 20px;
+    width        : 100%;
+    height       : 20px;
+    padding      : 3px;
+    border-radius: 3px;
+    border       : none;
+}
+
+input:hover {
+    border: 1px solid rgb(253, 253, 253);
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+#submit {
+    /* outline: 1px solid tomato; */
+    width           : auto;
+    height          : auto;
+    margin          : 8px 0px;
+    padding         : 8px 20px;
+    font-size       : 18px;
+    color           : white;
+    background-color: #00cc98;
+    border          : none;
+    float           : right;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+footer {
+    /* outline: 1px solid black; */
+    display        : flex;
+    justify-content: space-between;
+    padding        : 20px 10px;
+}
+
+.contact {
+    /* outline: 1px solid black; */
+    line-height: 1.4;
+    font-size  : 16px;
+}
+
+.email,
+.tel {
+    color: #fb4588;
+}
