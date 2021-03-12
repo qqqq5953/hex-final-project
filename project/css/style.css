@@ -194,7 +194,7 @@ nav {
 
 nav h1 a {
     /* outline: 1px solid black; */
-    background-image: url(/images/logo.png);
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
     width           : 224px;
     height          : 50px;
     display         : block;
